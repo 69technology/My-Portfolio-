@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eyitayo — UI/UX Designer & Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#hero" class="nav-logo">Eyi<span>.</span>tayo</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#work" onclick="closeMenu()">Work</a></li>
+        <li><a href="#process" onclick="closeMenu()">Process</a></li>
+        <li>
+          <a href="#contact" class="nav-cta" onclick="closeMenu()">HIRE ME</a>
+        </li>
+        <li>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            onclick="toggleTheme()"
+            title="Toggle theme"
+          >
+            <i data-lucide="sun"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span id="hb1"></span>
+        <span id="hb2"></span>
+        <span id="hb3"></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="hero-grid-lines"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span class="label">UI/UX Designer &amp; Web Developer</span>
+        </div>
+        <h1 class="hero-name">Olaseinde<br /><em>Timileyin</em></h1>
+        <h2 class="hero-name-sub">Eyitayo</h2>
+        <p class="hero-desc">
+          Crafting digital experiences that feel inevitable — where thoughtful
+          design meets clean, purposeful code. Based in
+          <strong>Ibadan, Nigeria</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary">
+            <i data-lucide="arrow-down-right"></i>
+            <span>View My Work</span>
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <i data-lucide="send"></i>
+            <span>Let's Talk</span>
+          </a>
+          <button class="btn-cv" onclick="downloadCV()">
+            <i data-lucide="download"></i>
+            <span>Download CV</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">2<em>+</em></div>
+          <div class="hero-stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">12<em>+</em></div>
+          <div class="hero-stat-label">Projects Delivered</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">8<em>+</em></div>
+          <div class="hero-stat-label">Happy Clients</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-left">
+            <div class="section-meta reveal">
+              <div class="section-meta-line"></div>
+              <span class="section-num">01 /</span>
+              <span class="label">About Me</span>
+            </div>
+            <h2 class="about-title reveal reveal-delay-1">
+              Designing with<br />intent.<br /><em>Building with care.</em>
+            </h2>
+            <p class="about-bio reveal reveal-delay-2">
+              I'm <strong>Eyitayo</strong>, a UI/UX designer and web developer
+              with <strong>2 years</strong> of hands-on experience turning
+              complex problems into elegant, user-centered digital products. I
+              sit at the intersection of design and code — comfortable moving
+              from Figma wireframes to production-ready interfaces. <br /><br />
+              Currently studying <strong>B.Sc. Computer Science</strong> at the
+              University of Ibadan, with real-world internship experience at 234
+              Web Resources and CDLP Hub. Every pixel and every line of code
+              earns its place.
+            </p>
+            <div class="about-values">
+              <div class="about-value reveal reveal-delay-3">
+                <div class="value-icon"><i data-lucide="user-check"></i></div>
+                <div class="value-text">
+                  <div class="value-name">User-Centered Design</div>
+                  <div class="value-desc">
+                    Every decision starts with the person using the product.
+                  </div>
+                </div>
+              </div>
+              <div class="about-value reveal reveal-delay-3">
+                <div class="value-icon"><i data-lucide="code-2"></i></div>
+                <div class="value-text">
+                  <div class="value-name">Clean, Purposeful Code</div>
+                  <div class="value-desc">
+                    Well-structured code that scales and breathes.
+                  </div>
+                </div>
+              </div>
+              <div class="about-value reveal reveal-delay-4">
+                <div class="value-icon"><i data-lucide="zap"></i></div>
+                <div class="value-text">
+                  <div class="value-name">Motion & Interaction</div>
+                  <div class="value-desc">
+                    Micro-interactions that make interfaces feel alive.
+                  </div>
+                </div>
+              </div>
+              <div class="about-value reveal reveal-delay-4">
+                <div class="value-icon"><i data-lucide="layers"></i></div>
+                <div class="value-text">
+                  <div class="value-name">Systems Thinking</div>
+                  <div class="value-desc">
+                    Design systems that keep products consistent at scale.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-right reveal reveal-delay-2">
+            <div class="photo-accent"></div>
+            <div class="about-photo-wrap">
+              <img src="assets/Profile.jpg" alt="Olaseinde Timileyin Eyitayo" />
+            </div>
+            <div class="photo-tag">Ibadan · Nigeria</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="skills-header">
+          <div>
+            <div class="section-meta reveal">
+              <div class="section-meta-line"></div>
+              <span class="section-num">02 /</span>
+              <span class="label">Skills & Tools</span>
+            </div>
+            <h2 class="skills-title reveal reveal-delay-1">
+              My <em>toolkit</em><br />of craft.
+            </h2>
+          </div>
+          <p class="skills-note reveal reveal-delay-2">
+            A blend of design and development tools that let me own the full
+            product journey — from concept to code.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-pill reveal reveal-delay-1">
+            <div class="skill-pill-icon">🎨</div>
+            <div>
+              <div class="skill-pill-name">Figma</div>
+              <div class="skill-pill-cat">UI Design</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-1">
+            <div class="skill-pill-icon">🖌️</div>
+            <div>
+              <div class="skill-pill-name">Adobe XD</div>
+              <div class="skill-pill-cat">UX Design</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-2">
+            <div class="skill-pill-icon">⚡</div>
+            <div>
+              <div class="skill-pill-name">Framer</div>
+              <div class="skill-pill-cat">Prototyping</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-2">
+            <div class="skill-pill-icon">🌐</div>
+            <div>
+              <div class="skill-pill-name">HTML5</div>
+              <div class="skill-pill-cat">Markup</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-3">
+            <div class="skill-pill-icon">💅</div>
+            <div>
+              <div class="skill-pill-name">CSS3</div>
+              <div class="skill-pill-cat">Styling</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-3">
+            <div class="skill-pill-icon">✨</div>
+            <div>
+              <div class="skill-pill-name">JavaScript</div>
+              <div class="skill-pill-cat">Development</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-4">
+            <div class="skill-pill-icon">⚛️</div>
+            <div>
+              <div class="skill-pill-name">React JS</div>
+              <div class="skill-pill-cat">Framework</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-4">
+            <div class="skill-pill-icon">🌊</div>
+            <div>
+              <div class="skill-pill-name">Tailwind CSS</div>
+              <div class="skill-pill-cat">Styling</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-1">
+            <div class="skill-pill-icon">🔍</div>
+            <div>
+              <div class="skill-pill-name">UX Research</div>
+              <div class="skill-pill-cat">Strategy</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-2">
+            <div class="skill-pill-icon">🗂️</div>
+            <div>
+              <div class="skill-pill-name">Design Systems</div>
+              <div class="skill-pill-cat">Architecture</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-3">
+            <div class="skill-pill-icon">🐙</div>
+            <div>
+              <div class="skill-pill-name">Git & GitHub</div>
+              <div class="skill-pill-cat">Version Control</div>
+            </div>
+          </div>
+          <div class="skill-pill reveal reveal-delay-4">
+            <div class="skill-pill-icon">📱</div>
+            <div>
+              <div class="skill-pill-name">Mobile UI</div>
+              <div class="skill-pill-cat">iOS & Android</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="container">
+        <div class="work-header">
+          <div>
+            <div class="section-meta reveal">
+              <div class="section-meta-line"></div>
+              <span class="section-num">03 /</span>
+              <span class="label">Selected Work</span>
+            </div>
+            <h2 class="work-title reveal reveal-delay-1">
+              Featured<br /><em>Projects.</em>
+            </h2>
+          </div>
+          <div class="work-count reveal reveal-delay-2">04</div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-img">
+              <img src="assets/assets2.png" alt="E-book-project" />
+              <div class="project-overlay"></div>
+              <span class="project-type-badge">Web App</span>
+            </div>
+            <div class="project-body">
+              <div class="project-num">01</div>
+              <h3 class="project-name">E-book website</h3>
+              <p class="project-desc">
+                An E-book website develop for great minds to
+                select,purchase,cart order and perform varieties of activites
+                online .
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">UX Research</span>
+                <span class="project-tag">Dashboard Design</span>
+                <span class="project-tag">React</span>
+              </div>
+              <a
+                href="https://69technology.github.io/E-book-project/"
+                class="project-link"
+                ><span>View Case Study</span><i data-lucide="arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-img">
+              <img src="assets/assets3.png" alt="My School App" />
+              <div class="project-overlay"></div>
+              <span class="project-type-badge">Mobile UI</span>
+            </div>
+            <div class="project-body">
+              <div class="project-num">02</div>
+              <h3 class="project-name">My School App</h3>
+              <p class="project-desc">
+                An educational mobile app designed to serve as mobile
+                educational instution with features tailored and centered for
+                users.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Mobile Design</span>
+                <span class="project-tag">Prototyping</span>
+                <span class="project-tag">Figma</span>
+              </div>
+              <a
+                href="https://www.figma.com/design/AiIWVZi6T5x7IZs6dNMQOr/my-school-mobile?node-id=0-1&p=f&t=1OdGcxPWk7UpOYEW-0"
+                class="project-link"
+                ><span>View Case Study</span><i data-lucide="arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card project-wide reveal reveal-delay-3">
+            <div class="project-img">
+              <img src="assets/asset1.png" alt="Bluevert Photography" />
+              <div class="project-overlay"></div>
+              <span class="project-type-badge">Brand + Web</span>
+            </div>
+            <div class="project-body">
+              <div class="project-num">03</div>
+              <h3 class="project-name">Bluevert Photography & Website</h3>
+              <p class="project-desc">
+                Full brand identity system and responsive portfolio website for
+                an emerging Nigerian photography company — from logo to live
+                code.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Branding</span>
+                <span class="project-tag">Web Design</span>
+                <span class="project-tag">HTML/CSS/JS</span>
+                <span class="project-tag">Tailwind</span>
+              </div>
+              <a href="https://task-stage-1.vercel.app/" class="Project-link"
+                ><span>View Case Study</span><i data-lucide=""></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card project-wide reveal reveal-delay-4">
+            <div class="project-img project-img-short">
+              <img
+                src="https://placehold.co/1200x420/181818/E8572A?text=ShopEase+E-Commerce+Redesign"
+                alt="ShopEase"
+              />
+              <div class="project-overlay"></div>
+              <span class="project-type-badge">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <div class="project-num">04</div>
+              <h3 class="project-name">ShopEase — E-Commerce Redesign</h3>
+              <p class="project-desc">
+                A full UX audit and redesign of an e-commerce platform's
+                checkout flow, reducing cart abandonment by 34% through focused
+                usability improvements.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">UX Audit</span>
+                <span class="project-tag">Conversion Optimisation</span>
+                <span class="project-tag">Wireframing</span>
+                <span class="project-tag">Usability Testing</span>
+              </div>
+              <a href="#" class="project-link"
+                ><span>View Case Study</span><i data-lucide="arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <div class="container">
+        <div class="process-header">
+          <div class="section-meta reveal">
+            <div class="section-meta-line"></div>
+            <span class="section-num">04 /</span>
+            <span class="label">My Process</span>
+          </div>
+          <h2 class="process-title reveal reveal-delay-1">
+            How I turn ideas into<br /><em>real experiences.</em>
+          </h2>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <div class="step-circle">
+              <div class="step-icon"><i data-lucide="search"></i></div>
+            </div>
+            <div class="step-label">Step 01</div>
+            <h3 class="step-name"><em>Discover</em></h3>
+            <p class="step-desc">
+              Deep user research, stakeholder interviews, competitive analysis,
+              and empathy mapping to understand the real problem before touching
+              a tool.
+            </p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <div class="step-circle">
+              <div class="step-icon"><i data-lucide="target"></i></div>
+            </div>
+            <div class="step-label">Step 02</div>
+            <h3 class="step-name"><em>Define</em></h3>
+            <p class="step-desc">
+              Synthesizing research into clear problem statements, user
+              personas, and journey maps that align design goals with business
+              outcomes.
+            </p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <div class="step-circle">
+              <div class="step-icon"><i data-lucide="pen-tool"></i></div>
+            </div>
+            <div class="step-label">Step 03</div>
+            <h3 class="step-name"><em>Design</em></h3>
+            <p class="step-desc">
+              Wireframes, high-fidelity mockups, interactive prototypes, and
+              design systems built in Figma — tested with real users through
+              iterative cycles.
+            </p>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <div class="step-circle">
+              <div class="step-icon"><i data-lucide="rocket"></i></div>
+            </div>
+            <div class="step-label">Step 04</div>
+            <h3 class="step-name"><em>Deliver</em></h3>
+            <p class="step-desc">
+              Clean, accessible, production-ready code. Handoff documentation,
+              developer collaboration, and post-launch iteration to ensure the
+              vision ships.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-meta reveal">
+          <div class="section-meta-line"></div>
+          <span class="section-num">05 /</span>
+          <span class="label">Testimonials</span>
+        </div>
+        <h2 class="testimonials-title reveal reveal-delay-1">
+          What clients<br /><em>say.</em>
+        </h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="quote-mark">"</div>
+            <p class="testimonial-text">
+              Working with Eyitayo was a genuine pleasure. He didn't just design
+              screens — he understood our users deeply and pushed back on ideas
+              that wouldn't serve them. The final product was miles beyond what
+              we imagined.
+            </p>
+            <div class="testimonial-author">
+              <img
+                class="author-avatar"
+                src="https://placehold.co/96x96/1a1a1a/F5F0E8?text=AO"
+                alt="Adaeze Okafor"
+              />
+              <div>
+                <div class="author-name">Adaeze Okafor</div>
+                <div class="author-role">Founder, Orisun AgriTech</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-3">
+            <div class="quote-mark">"</div>
+            <p class="testimonial-text">
+              Eyitayo has this rare ability to bridge design and development
+              seamlessly. He handed off pixel-perfect Figma files and then built
+              them himself — no translation loss. Our dev team loved working
+              with him.
+            </p>
+            <div class="testimonial-author">
+              <img
+                class="author-avatar"
+                src="https://placehold.co/96x96/222222/E8572A?text=SK"
+                alt="Samuel Kolawole"
+              />
+              <div>
+                <div class="author-name">Samuel Kolawole</div>
+                <div class="author-role">CTO, ShopEase Nigeria</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Info + Socials -->
+          <div class="contact-info">
+            <div class="section-meta reveal">
+              <div class="section-meta-line"></div>
+              <span class="section-num">06 /</span>
+              <span class="label">Get In Touch</span>
+            </div>
+            <h2 class="contact-title reveal reveal-delay-1">
+              Let's build<br />something <em>great.</em>
+            </h2>
+            <p class="contact-sub reveal reveal-delay-2">
+              Have a project in mind, or just want to say hello? Reach out
+              through any of these channels — I reply within 24 hours.
+            </p>
+
+            <div class="contact-details reveal reveal-delay-3">
+              <a
+                href="mailto:olatimi2014@gmail.com"
+                class="contact-detail-item"
+              >
+                <div class="contact-detail-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-label">Email</div>
+                  <div class="contact-detail-value">olatimi2014@gmail.com</div>
+                </div>
+              </a>
+              <a href="tel:+2348115374962" class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-label">Phone</div>
+                  <div class="contact-detail-value">+234 811 537 4962</div>
+                </div>
+              </a>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-label">Location</div>
+                  <div class="contact-detail-value">
+                    Ibadan, Oyo State, Nigeria
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp + CV buttons -->
+            <div class="contact-action-btns reveal reveal-delay-4">
+              <button class="btn-whatsapp" onclick="openWhatsApp()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="18"
+                  height="18"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                <span>Chat on WhatsApp</span>
+              </button>
+              <button class="btn-cv-outline" onclick="downloadCV()">
+                <i data-lucide="download"></i>
+                <span>Download CV</span>
+              </button>
+            </div>
+
+            <div class="social-links reveal reveal-delay-4">
+              <a
+                href="https://github.com/69technology"
+                target="_blank"
+                class="social-link"
+                title="GitHub"
+                ><i data-lucide="github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/olaseinde-timileyin-10170432a/"
+                target="_blank"
+                class="social-link"
+                title="LinkedIn"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a
+                href="https://www.behance.net/olaseintimiley"
+                target="_blank"
+                class="social-link"
+                title="Behance"
+                ><i data-lucide="layout"></i
+              ></a>
+              <a
+                href="mailto:olatimi2014@gmail.com"
+                class="social-link"
+                title="Email"
+                ><i data-lucide="mail"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrap reveal reveal-delay-3">
+            <div class="form-header">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-sub">
+                Fill in the form and I'll get back to you shortly.
+              </p>
+            </div>
+            <div id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname"
+                    >Full Name <span class="req">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="fname"
+                    placeholder="e.g. Olaseinde Timileyin"
+                  />
+                  <span class="field-error" id="fnameErr"></span>
+                </div>
+                <div class="form-group">
+                  <label for="femail"
+                    >Email Address <span class="req">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="femail"
+                    placeholder="you@example.com"
+                  />
+                  <span class="field-error" id="femailErr"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="tel" id="fphone" placeholder="+234 800 000 0000" />
+              </div>
+              <div class="form-group">
+                <label for="fsubject">Subject <span class="req">*</span></label>
+                <select id="fsubject">
+                  <option value="">— Select a subject —</option>
+                  <option value="UI/UX Design Project">
+                    UI/UX Design Project
+                  </option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Freelance Collaboration">
+                    Freelance Collaboration
+                  </option>
+                  <option value="Job Opportunity">Job Opportunity</option>
+                  <option value="General Enquiry">General Enquiry</option>
+                </select>
+                <span class="field-error" id="fsubjectErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="fmessage">Message <span class="req">*</span></label>
+                <textarea
+                  id="fmessage"
+                  rows="5"
+                  placeholder="Tell me about your project, idea, or how I can help..."
+                ></textarea>
+                <span class="field-error" id="fmessageErr"></span>
+              </div>
+              <button class="btn-submit" onclick="submitForm()">
+                <i data-lucide="send"></i>
+                <span id="submitText">Send Message</span>
+              </button>
+              <div id="formSuccess" class="form-success" style="display: none">
+                <i data-lucide="check-circle"></i>
+                <span>Message sent! I'll reply within 24 hours.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">Eye<span>.</span>tayo</div>
+          <p class="footer-copy">
+            © 2025 Olaseinde Timileyin. All rights reserved.
+          </p>
+          <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
